@@ -1,0 +1,20 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>PDF Output</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+  </head>
+  <body>
+    <h1>Form Data</h1>
+    <h2>Full Name: {{ data.name }}</h2>
+    <h3>Subject: {{ data.subject }}</h3>
+    <p>Email: {{ data.email }}</p>
+    <p>Phone: {{ data.phone }}</p>
+    <p>Company: {{ data.company }}</p>
+    <p>Address: {{ data.address }}</p>
+    <p>City: {{ data.city }}</p>
+    <p>Message: {{ data.message }}</p>
+  </body>
+</html>
