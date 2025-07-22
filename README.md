@@ -7,22 +7,17 @@ User fills a form -> gets styled PDF -> downloads it.
 1. Clone repo:git clone https://github.com/BahaaEldienZahi/pdf-generator.git
 2. cd pdf-generator
 3. 2. Create virtualenv:
-python -m venv env
-env\Scripts\activate
+      python -m venv env
+      env\Scripts\activate
 
 4. Install requirements:
 
 5. Run the server:
 
-Then go to: http://127.0.0.1:8000/
-
-
+Then go to: http://127.0.0.1:8000/generate-pdf/
 
 ## Notes
+
 - Works fully in browser and phone
 - No DB used
 - Offline CSS/assets
-
-
-
-
