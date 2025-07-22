@@ -14,9 +14,10 @@ def generate_pdf_view(request):
             data['name'] = full_name  
             html = render_to_string('pdf_template.html', {'data': data})
             response = HttpResponse(content_type='application/pdf')
-            response['Content-Disposition'] = 'attachment; filename="form_data.pdf"'
+            response['Content-Disposition'] = f'attachment; filename="{data["name"]}.pdf"'
             pisa.CreatePDF(html, dest=response)
             return response
     else:
         form = ContactForm()
     return render(request, 'form.html', {'form': form})
+
